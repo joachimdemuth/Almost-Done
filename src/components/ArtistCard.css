@@ -1,0 +1,48 @@
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    width: 181px;
+    height: 279px;
+    border-radius: 1.75rem;
+    border: 1px solid blue;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    min-height: 181px;
+    max-height: 181px;
+    width:100%;
+    border-bottom: 1px solid blue;
+}
+
+.image-container img {
+    border-radius: 1.75rem 1.75rem 0 0;
+    max-width: 100%;
+    height: auto;
+    max-height: 181px;
+    justify-content: center;
+    align-self: center;
+}
+
+.metadata {
+    display: flex;
+    flex-direction: column;
+    color: blue;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 8px 16px;
+    height: 100%;
+}
+
+.band-name {
+    display: flex;
+}
+
+.band-link {
+    color: blue;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+}

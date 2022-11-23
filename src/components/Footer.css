@@ -1,0 +1,39 @@
+footer {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid blue;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex: 1;
+  max-width: 90%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+}
+
+.copyright-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: blue;
+}
+
+.copyright-container h4 {
+  font-weight: 400;
+}
+
+.social-container {
+  display: flex;
+  flex: 1;
+
+  justify-content: end;
+}

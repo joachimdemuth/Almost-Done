@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import NftGallery from './routes/NftGallery';
 import Spotify from './routes/Spotify';
 import Contact from './routes/Contact';
@@ -18,13 +19,13 @@ root.render(
       <Header />
       
       <Routes>
-        <Route exact path="/" element={<App />} />
+        <Route exact path="/almost-done" element={<App />} />
         <Route path="/gallery" element={<NftGallery />} />
         <Route path="/spotify" element={<Spotify />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+<Footer />
     </Router>
-
 
 
   </React.StrictMode>

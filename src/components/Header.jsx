@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header>
+      <div className="header-container">
+
       <div className="logo-container">
         <img src={logo} alt="Logo" />
 
         <h4 className="logo">
-            <Link to="/">
+            <Link to="/almost-done">
                 Almost Done
                 </Link>
             </h4>
@@ -25,7 +27,9 @@ function Header() {
           </div>
 
           <div className="link-container">
-            <li className="nav-link">Spotify</li>
+            <li className="nav-link">
+              <Link to="/spotify">Spotify</Link>
+              </li>
           </div>
 
           <div className="link-container">
@@ -33,7 +37,7 @@ function Header() {
           </div>
         </ul>
       </nav>
-      <div className="coffee"></div>
+      </div>
     </header>
   );
 }

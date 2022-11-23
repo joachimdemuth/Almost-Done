@@ -14,12 +14,20 @@ function NftGallery() {
 
   
   useEffect(() => {
-    fetchNfts("https://api.nftport.xyz/v0/solana/accounts/558acsgeuPDFQwdCTM8LWjgyiiZCPyoS9iXts1KAWRCW?include=metadata")
-    .then(console.log("hej"))
-    .catch(console.warn)
+    setLoading(true)
+    fetchNfts()
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data)
+      setFirstFetch(data)
+      
+    })
+    setLoading(false)
+  }, [])
+
 
  
-  })
+  
    // continuedFetchNfts()
     // .then((res) => res.json())
 
@@ -54,11 +62,11 @@ function NftGallery() {
   const nfts = firstFecth.nfts;
   const sortedNfts = nfts.filter((nft) => nft.metadata);
 
-  // console.log(sortedNfts)
+
 
   return (
     <>
-      {/* <div className="container">
+      <div className="container">
         <h1>NFT Gallery</h1>
         <div className="nft-container">
           {sortedNfts.map((nft) => {
@@ -82,7 +90,7 @@ function NftGallery() {
             );
           })}
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
