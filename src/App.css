@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  background: orangered;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  flex: 1;
+}
+
+.introduction {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 48px;
+  width: 60%;
+}
+
+.intro-text h1 {
+  font-size: 5rem;
+  background: linear-gradient(to right, #0000ff, #ff4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin: 5px;
+  font-size: 22px;
+  font-weight: 300;
+  background: linear-gradient(to right, blue, orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+
+.cta-primary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 16px;
+
+    width: auto;
+    height: 44px;
+    background: #0000ff;
+    border-radius: 100px;
+    border: none;
+    color: orangered;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.cta-primary:hover {
+  background: transparent;
+  color: blue;
+  border: 1px solid blue;
+
+  transition: .1s;
+  cursor: pointer;
+}
+
+.cta-outline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 16px;
+
+    width: auto;
+    height: 44px;
+    background: transparent;
+    border-radius: 100px;
+    border: 1px solid blue;
+    color: blue;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.cta-outline:hover {
+  background: blue;
+  color: orangered;
+  transition: .1s;
+  cursor: pointer;
+}

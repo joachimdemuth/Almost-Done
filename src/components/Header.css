@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    min-height: 80px;
+    margin: auto;
+    align-items: center;
+    background: #ff4500;
+}
+
+.logo-container,
+.nav-links,
+.coffee {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo-container img {
+    max-width: 30px;
+}
+
+.logo-container a {
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: 600;
+    margin: 20px;
+    color: #0000ff;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex: 2;
+    height: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.link-container {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 12px;
+    transition: border .2s;
+}
+
+.link-container:hover {
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.nav-link  {
+    color: blue;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+    color:#0000ff;
+}
+
+.coffee {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.coffee img {
+    max-height: 35px;
+}
+
+@media screen and (max-width: 1024px) {}
