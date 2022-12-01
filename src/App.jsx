@@ -1,9 +1,5 @@
 import React from "react";
-
-
-
 import "./App.css";
-
 
 function App() {
   return (
@@ -17,17 +13,14 @@ function App() {
             </div>
 
             <div className="cta">
-              <button className="cta-outline cta-learn">
-
-                Learn More
-
-                </button>
-              <button className="cta-primary cta-explore">Explore Projects</button>
+              <button className="cta-outline cta-learn">Learn More</button>
+              <button className="cta-primary cta-explore">
+                Explore Projects
+              </button>
             </div>
           </div>
         </section>
       </main>
-
     </>
   );
 }

@@ -46,4 +46,10 @@ html, body {
     font-weight: 500;
     color: blue;
   }
+
+  @media screen and (max-width:640px) {
+    .container {
+        width: 90%;
+    }
+  }
   

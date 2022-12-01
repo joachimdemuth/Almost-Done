@@ -31,9 +31,37 @@ footer {
   font-weight: 400;
 }
 
+
+
 .social-container {
   display: flex;
   flex: 1;
 
   justify-content: end;
+}
+
+
+@media screen and (max-width:640px) {
+
+ 
+
+  .logo-container {
+    flex: 1;
+  }
+
+  .logo-container img {
+    display: none;
+  }
+  .logo-container h4 {
+    font-size: 12px;
+  }
+
+  .copyright-container {
+    font-size: 12px;
+  }
+
+  .social {
+    width:24px;
+    height:24px;
+  }
 }
